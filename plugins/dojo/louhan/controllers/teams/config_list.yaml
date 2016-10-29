@@ -1,0 +1,11 @@
+list: $/dojo/louhan/models/team/columns.yaml
+modelClass: Dojo\Louhan\Models\Team
+title: Teams
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dojo/louhan/teams/update/:id'

@@ -9,8 +9,7 @@ navigation:
         label: 'dojo.louhan::lang.label.master_data'
         url: dojo/louhan/categories
         icon: icon-book
-        permissions:
-            - access_categories
+        permissions: {  }
         sideMenu:
             category-side-menu-item:
                 label: 'dojo.louhan::lang.label.manage_categories'
@@ -22,9 +21,11 @@ navigation:
                 label: 'dojo.louhan::lang.label.manage_subcategories'
                 url: dojo/louhan/subcategories
                 icon: icon-cubes
+                permissions:
+                    - access_subcategories
             team-side-menu-item:
                 label: 'dojo.louhan::lang.label.manage_teams'
-                url: /
+                url: dojo/louhan/teams
                 icon: icon-users
                 permissions:
                     - access_teams
@@ -38,4 +39,3 @@ permissions:
     access_teams:
         tab: 'dojo.louhan::lang.label.master_data'
         label: 'dojo.louhan::lang.label.manage_teams'
-        

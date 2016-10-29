@@ -2,11 +2,41 @@ columns:
     id:
         label: 'dojo.louhan::lang.label.id'
         type: number
+        sortable: true
     name:
         label: 'dojo.louhan::lang.label.category_name'
         type: text
+        searchable: true
+        sortable: true
     rate_overall_impression:
         label: 'dojo.louhan::lang.label.overall_impression'
-        type: partial
-        path: $/dojo/louhan/controllers/categories/_percentage_column.htm
-        cssClass: oc-icon-circle text-danger
+        select: concat(rate_overall_impression, ' %')
+        sortable: true
+    rate_head:
+        label: 'dojo.louhan::lang.label.head'
+        select: concat(rate_head, ' %')
+        sortable: true
+    rate_face:
+        label: 'dojo.louhan::lang.label.face'
+        select: concat(rate_face, ' %')
+        sortable: true
+    rate_body_shape:
+        label: 'dojo.louhan::lang.label.body_shape'
+        select: concat(rate_body_shape, ' %')
+        sortable: true
+    rate_marking:
+        label: 'dojo.louhan::lang.label.marking'
+        select: concat(rate_marking, ' %')
+        sortable: true
+    rate_pearl:
+        label: 'dojo.louhan::lang.label.pearl'
+        select: concat(rate_pearl, ' %')
+        sortable: true
+    rate_color:
+        label: 'dojo.louhan::lang.label.color'
+        select: concat(rate_color, ' %')
+        sortable: true
+    rate_finnage:
+        label: 'dojo.louhan::lang.label.finnage'
+        select: concat(rate_finnage, ' %')
+        sortable: true

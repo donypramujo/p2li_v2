@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateDojoLouhanCategories extends Migration
+class CreateDojoLouhanCategoriesTable extends Migration
 {
     public function up()
     {

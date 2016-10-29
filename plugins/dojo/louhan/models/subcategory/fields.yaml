@@ -5,12 +5,10 @@ fields:
         placeholder: 'dojo.louhan::lang.label.subcategory_name'
         type: text
     category:
-        label: User
-        type: recordfinder
-        list: $/dojo/louhan/models/category/columns.yaml
-        prompt: Click the %s button to find a user
-        title: 'dojo.louhan::lang.label.category'
+        label: 'dojo.louhan::lang.label.category'
         nameFrom: id
         descriptionFrom: name
+        prompt: 'dojo.louhan::lang.label.find_category'
+        list: $/dojo/louhan/models/category/short_columns.yaml
         span: left
-
+        type: recordfinder

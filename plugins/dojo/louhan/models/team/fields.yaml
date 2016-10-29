@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'dojo.louhan::lang.label.team_name'
+        span: auto
+        type: text

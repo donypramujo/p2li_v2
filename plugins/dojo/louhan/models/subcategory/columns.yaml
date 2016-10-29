@@ -2,10 +2,16 @@ columns:
     id:
         label: 'dojo.louhan::lang.label.id'
         type: number
+        sortable: true
     name:
         label: 'dojo.louhan::lang.label.subcategory_name'
         type: text
+        searchable: true
+        sortable: true
     category:
         label: 'dojo.louhan::lang.label.category'
-        relation: category
+        type: text
+        searchable: true
+        sortable: true
         select: name
+        relation: category

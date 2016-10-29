@@ -4,7 +4,7 @@ columns:
         type: number
         sortable: true
     name:
-        label: 'dojo.louhan::lang.label.category_name'
+        label: 'dojo.louhan::lang.label.team_name'
         type: text
         searchable: true
         sortable: true

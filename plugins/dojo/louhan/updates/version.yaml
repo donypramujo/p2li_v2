@@ -2,7 +2,8 @@
     - 'Initialize plugin.'
 1.0.2:
     - 'Created table dojo_louhan_categories'
-    - builder_table_create_dojo_louhan_categories.php
-1.0.3:
-    - 'Created table dojo_louhan_subcategories'
-    - builder_table_create_dojo_louhan_subcategories.php
+    - create_dojo_louhan_categories_table.php
+    - create_dojo_louhan_subcategories_table.php
+    - create_dojo_louhan_teams_table.php
+
+    

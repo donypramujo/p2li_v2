@@ -1,0 +1,10 @@
+name: Teams
+form: $/dojo/louhan/models/team/fields.yaml
+modelClass: Dojo\Louhan\Models\Team
+defaultRedirect: dojo/louhan/teams
+create:
+    redirect: 'dojo/louhan/teams/update/:id'
+    redirectClose: dojo/louhan/teams
+update:
+    redirect: dojo/louhan/teams
+    redirectClose: dojo/louhan/teams
