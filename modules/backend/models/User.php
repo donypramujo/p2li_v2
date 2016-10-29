@@ -32,7 +32,7 @@ class User extends UserBase
      * Relations
      */
     public $belongsToMany = [
-        'groups' => ['Backend\Models\UserGroup', 'table' => 'backend_users_groups'],
+        'groups' => ['Backend\Models\UserGroup', 'table' => 'backend_users_groups']
     ];
 
     public $attachOne = [
