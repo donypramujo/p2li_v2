@@ -1,0 +1,10 @@
+name: Contests
+form: $/dojo/louhan/models/contest/fields.yaml
+modelClass: Dojo\Louhan\Models\Contest
+defaultRedirect: dojo/louhan/contests
+create:
+    redirect: 'dojo/louhan/contests/update/:id'
+    redirectClose: dojo/louhan/contests
+update:
+    redirect: dojo/louhan/contests
+    redirectClose: dojo/louhan/contests

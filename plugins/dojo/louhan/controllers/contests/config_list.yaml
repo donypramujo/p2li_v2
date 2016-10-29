@@ -1,0 +1,12 @@
+list: $/dojo/louhan/models/contest/columns.yaml
+modelClass: Dojo\Louhan\Models\Contest
+title: Contests
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dojo/louhan/contests/update/:id'
+filter: config_filter.yaml

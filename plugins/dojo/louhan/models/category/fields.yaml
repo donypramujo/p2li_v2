@@ -5,35 +5,49 @@ fields:
         placeholder: 'dojo.louhan::lang.label.category_name'
         required: true
         type: text
+    section1:
+        label: 'dojo.louhan::lang.label.category_rate'
+        span: full
+        cssClass: ''
+        type: section
+        comment: 'dojo.louhan::lang.label.total_rate'
     rate_overall_impression:
         label: 'dojo.louhan::lang.label.overall_impression'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.overall_impression'
         type: text
     rate_head:
         label: 'dojo.louhan::lang.label.head'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.head'
         type: text
     rate_face:
         label: 'dojo.louhan::lang.label.face'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.face'
         type: text
     rate_body_shape:
         label: 'dojo.louhan::lang.label.body_shape'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.body_shape'
         type: text
     rate_marking:
         label: 'dojo.louhan::lang.label.marking'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.marking'
         type: text
     rate_pearl:
         label: 'dojo.louhan::lang.label.pearl'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.pearl'
         type: text
     rate_color:
         label: 'dojo.louhan::lang.label.color'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.color'
         type: text
     rate_finnage:
         label: 'dojo.louhan::lang.label.finnage'
         span: auto
+        placeholder: 'dojo.louhan::lang.label.finnage'
         type: text

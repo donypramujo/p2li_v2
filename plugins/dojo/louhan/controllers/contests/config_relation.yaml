@@ -1,0 +1,11 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+juries:
+    label: Role
+    view:
+        list: ~/modules/backend/models/user/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        list: $/dojo/louhan/models/jury/columns.yaml
+        form: $/dojo/louhan/models/jury/fields.yaml

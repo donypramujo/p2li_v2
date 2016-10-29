@@ -1,0 +1,19 @@
+columns:
+    id:
+        label: 'dojo.louhan::lang.label.id'
+        type: number
+        sortable: true
+    name:
+        label: 'dojo.louhan::lang.label.contest_name'
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: 'dojo.louhan::lang.label.status'
+        searchable: true
+        type: partial
+        path: $/dojo/louhan/models/contest/_column_status.htm
+    period:
+        label: 'dojo.louhan::lang.label.period'
+        select: concat(DATE_FORMAT(start_date,'%d %b %Y'),' to ',DATE_FORMAT(end_date,'%d %b %Y'))
+

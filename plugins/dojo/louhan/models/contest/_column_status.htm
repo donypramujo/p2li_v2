@@ -1,0 +1,11 @@
+<?php
+$class = [
+    'preparation' => 'text-primary',
+    'nomination' => 'text-warning',
+    'ongoing' => 'text-success',
+	'completed' => '',
+	'cancelled' => 'text-danger'
+];
+?>
+<span class="oc-icon-circle <?= $class[$value] ?>"><?= e(trans('dojo.louhan::lang.label.'.$value)) ?></span>
+

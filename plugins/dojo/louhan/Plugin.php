@@ -2,8 +2,9 @@
 
 namespace Dojo\Louhan;
 
-use System\Classes\PluginBase;
+use Backend\Models\User;
 use Illuminate\Support\Facades\Validator;
+use System\Classes\PluginBase;
 
 class Plugin extends PluginBase {
 	public function registerComponents() {
@@ -38,5 +39,10 @@ class Plugin extends PluginBase {
 			$total_rates = collect ( $rates )->sum ();
 			return $total_rates == 100;
 		}, trans ( 'dojo.louhan::lang.validation.rate' ) );
+		
+		
+		User::extend(function($model) {
+			$model->belongsToMany['contests'] = ['Dojo\Louhan\Models\Contest','table' => 'dojo_louhan_juries'];
+		});
 	}
 }

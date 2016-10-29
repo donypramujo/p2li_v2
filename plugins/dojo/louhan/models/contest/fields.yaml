@@ -1,0 +1,32 @@
+fields:
+    name:
+        label: 'dojo.louhan::lang.label.contest_name'
+        span: full
+        placeholder: 'dojo.louhan::lang.label.contest_name'
+        type: text
+    juries: 
+        label: 'Crots'
+        span: full
+        type: partial
+        path: $/dojo/louhan/models/contest/_field_juries.htm
+secondaryTabs:
+    fields:
+        start_date:
+            label: 'dojo.louhan::lang.label.start_date'
+            mode: date
+            span: left
+            type: datepicker
+            format: d/m/Y
+        end_date:
+            label: 'dojo.louhan::lang.label.end_date'
+            mode: date
+            span: right
+            type: datepicker
+            format: d/m/Y
+        status:
+            label: 'dojo.louhan::lang.label.status'
+            span: left
+            type: radio
+            default: nomination
+tabs:
+

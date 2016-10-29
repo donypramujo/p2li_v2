@@ -1,8 +1,8 @@
 plugin:
     name: 'dojo.louhan::lang.plugin.name'
     description: 'dojo.louhan::lang.plugin.description'
-    author: 'dojo:louhan::lang.author.name'
-    icon: oc-icon-fighter-jet
+    author: 'Dony Pramujo'
+    icon: oc-icon-file-archive-o
     homepage: ''
 navigation:
     masterdata-main-menu-item:
@@ -29,6 +29,19 @@ navigation:
                 icon: icon-users
                 permissions:
                     - access_teams
+            user-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_users'
+                url: dojo/louhan/users
+                icon: icon-users
+    contest-main-menu-item:
+        label: 'dojo.louhan::lang.label.contest'
+        url: dojo/louhan/contests
+        icon: icon-comments
+        sideMenu:
+            contests-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_contests'
+                url: dojo/louhan/contests
+                icon: icon-comments-o
 permissions:
     access_categories:
         tab: 'dojo.louhan::lang.label.master_data'
@@ -39,3 +52,9 @@ permissions:
     access_teams:
         tab: 'dojo.louhan::lang.label.master_data'
         label: 'dojo.louhan::lang.label.manage_teams'
+    access_users:
+        tab: 'dojo.louhan::lang.label.master_data'
+        label: 'dojo.louhan::lang.label.manage_users'
+    access_contests:
+        tab: 'dojo.louhan::lang.label.contest'
+        label: 'dojo.louhan::lang.label.manage_contests'

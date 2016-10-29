@@ -1,0 +1,5 @@
+fields: 
+    user:
+      label: User
+      type: relation
+      select: concat(first_name, ' ', last_name)

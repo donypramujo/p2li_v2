@@ -1,0 +1,4 @@
+columns:
+    id:
+        label: 'dojo.louhan::lang.label.id'
+        type: number
