@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: 'dojo.louhan::lang.label.subcategory_name'
+        span: left
+        placeholder: 'dojo.louhan::lang.label.subcategory_name'
+        type: text
+    category:
+        label: User
+        type: recordfinder
+        list: $/dojo/louhan/models/category/columns.yaml
+        prompt: Click the %s button to find a user
+        title: 'dojo.louhan::lang.label.category'
+        nameFrom: id
+        descriptionFrom: name
+        span: left
+

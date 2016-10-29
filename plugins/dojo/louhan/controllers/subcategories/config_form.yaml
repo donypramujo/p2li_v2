@@ -1,0 +1,10 @@
+name: Subcategories
+form: $/dojo/louhan/models/subcategory/fields.yaml
+modelClass: Dojo\Louhan\Models\Subcategory
+defaultRedirect: dojo/louhan/subcategories
+create:
+    redirect: 'dojo/louhan/subcategories/update/:id'
+    redirectClose: dojo/louhan/subcategories
+update:
+    redirect: dojo/louhan/subcategories
+    redirectClose: dojo/louhan/subcategories

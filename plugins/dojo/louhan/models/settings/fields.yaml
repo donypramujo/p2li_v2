@@ -1,0 +1,7 @@
+fields:
+    name:
+        label: 'dojo.louhan::lang.label.subcategory_name'
+        span: left
+        placeholder: 'dojo.louhan::lang.label.subcategory_name'
+        type: text
+

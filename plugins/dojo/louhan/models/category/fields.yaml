@@ -1,0 +1,59 @@
+fields:
+    name:
+        label: 'dojo.louhan::lang.label.category_name'
+        span: left
+        placeholder: 'dojo.louhan::lang.label.category_name'
+        type: text
+        required: true
+        commentAbove: Category Name
+tabs :
+    fields:
+        rate_overall_impression:
+            label: 'dojo.louhan::lang.label.overall_impression'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            placeholder: 'dojo.louhan::lang.label.overall_impression'
+            required: true
+        rate_head:
+            label: 'dojo.louhan::lang.label.head'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_face:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_body_shape:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_marking:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_pearl:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_color:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true
+        rate_finnage:
+            label: 'dojo.louhan::lang.label.face'
+            span: auto
+            type: number
+            tab: 'dojo.louhan::lang.label.category_rate'
+            required: true

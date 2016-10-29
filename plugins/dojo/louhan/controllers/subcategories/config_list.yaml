@@ -1,0 +1,12 @@
+list: $/dojo/louhan/models/subcategory/columns.yaml
+modelClass: Dojo\Louhan\Models\Subcategory
+title: Subcategories
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dojo/louhan/subcategories/update/:id'
+filter: config_filter.yaml

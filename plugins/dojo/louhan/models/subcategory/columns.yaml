@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'dojo.louhan::lang.label.id'
+        type: number
+    name:
+        label: 'dojo.louhan::lang.label.subcategory_name'
+        type: text
+    category:
+        label: 'dojo.louhan::lang.label.category'
+        relation: category
+        select: name

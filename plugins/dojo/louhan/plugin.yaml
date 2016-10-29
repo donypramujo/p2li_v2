@@ -1,0 +1,41 @@
+plugin:
+    name: 'dojo.louhan::lang.plugin.name'
+    description: 'dojo.louhan::lang.plugin.description'
+    author: 'dojo:louhan::lang.author.name'
+    icon: oc-icon-fighter-jet
+    homepage: ''
+navigation:
+    masterdata-main-menu-item:
+        label: 'dojo.louhan::lang.label.master_data'
+        url: dojo/louhan/categories
+        icon: icon-book
+        permissions:
+            - access_categories
+        sideMenu:
+            category-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_categories'
+                url: dojo/louhan/categories
+                icon: icon-cube
+                permissions:
+                    - access_categories
+            subcategory-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_subcategories'
+                url: dojo/louhan/subcategories
+                icon: icon-cubes
+            team-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_teams'
+                url: /
+                icon: icon-users
+                permissions:
+                    - access_teams
+permissions:
+    access_categories:
+        tab: 'dojo.louhan::lang.label.master_data'
+        label: 'dojo.louhan::lang.label.manage_categories'
+    access_subcategories:
+        tab: 'dojo.louhan::lang.label.master_data'
+        label: 'dojo.louhan::lang.label.manage_subcategories'
+    access_teams:
+        tab: 'dojo.louhan::lang.label.master_data'
+        label: 'dojo.louhan::lang.label.manage_teams'
+        

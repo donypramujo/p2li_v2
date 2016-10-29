@@ -1,0 +1,7 @@
+columns:
+    id:
+        label: 'dojo.louhan::lang.label.id'
+        type: number
+    name:
+        label: 'dojo.louhan::lang.label.category_name'
+        type: text

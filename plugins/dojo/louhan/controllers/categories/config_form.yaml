@@ -1,0 +1,10 @@
+name: Categories
+form: $/dojo/louhan/models/category/fields.yaml
+modelClass: Dojo\Louhan\Models\Category
+defaultRedirect: dojo/louhan/categories
+create:
+    redirect: 'dojo/louhan/categories/update/:id'
+    redirectClose: dojo/louhan/categories
+update:
+    redirect: dojo/louhan/categories
+    redirectClose: dojo/louhan/categories
