@@ -1,2 +1,7 @@
 .DS_Store
 *.log
+/storage/cms/
+/storage/fonts/
+/storage/framework/
+/storage/logs/
+/storage/temp/
