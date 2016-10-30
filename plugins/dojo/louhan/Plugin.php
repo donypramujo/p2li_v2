@@ -5,6 +5,7 @@ namespace Dojo\Louhan;
 use Backend\Models\User;
 use Illuminate\Support\Facades\Validator;
 use System\Classes\PluginBase;
+use October\Rain\Database\Builder;
 
 class Plugin extends PluginBase {
 	public function registerComponents() {
@@ -12,13 +13,13 @@ class Plugin extends PluginBase {
 	
 	public function registerSettings() {
 		return [ 
-				'location' => [ 
+				'contest' => [ 
 						'label' => 'Manage Configuration',
 						'description' => 'Manage contest configuration.',
 						'category' => 'dojo.louhan::lang.label.contest',
 						'icon' => 'icon-globe',
 						'class' => 'Dojo\Louhan\Models\Settings',
-						'order' => 500,
+						'order' => 0,
 						'keywords' => 'contest' 
 				] 
 		];
@@ -41,8 +42,15 @@ class Plugin extends PluginBase {
 		}, trans ( 'dojo.louhan::lang.validation.rate' ) );
 		
 		
+		
+		
 		User::extend(function($model) {
 			$model->belongsToMany['contests'] = ['Dojo\Louhan\Models\Contest','table' => 'dojo_louhan_juries'];
+
+			$model->addDynamicMethod('scopeJury', function($query) use ($model) {
+				return $query->where('id', 2);
+			});
+			
 		});
 	}
 }

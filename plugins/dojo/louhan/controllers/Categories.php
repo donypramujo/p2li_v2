@@ -13,6 +13,8 @@ class Categories extends Controller
     public $requiredPermissions = [
         'access_categories' 
     ];
+    
+    public $bodyClass = 'compact-container';
 
     public function __construct()
     {

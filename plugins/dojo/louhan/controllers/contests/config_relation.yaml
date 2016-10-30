@@ -9,3 +9,4 @@ juries:
     manage:
         list: $/dojo/louhan/models/jury/columns.yaml
         form: $/dojo/louhan/models/jury/fields.yaml
+        scope: jury

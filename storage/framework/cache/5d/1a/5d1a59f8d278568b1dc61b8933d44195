@@ -1,0 +1,30 @@
+1477792800a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:842:"    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+				&copy;  {{ "now"|date("Y") }} {{ this.theme.site_name }}. All Rights Reserved. A <a href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates" target="_blank">ShapeBootstrap</a> Theme &#123;&#123; Powered by <a href="http://octobercms.com/">OctoberCMS</a> &#125;&#125;
+            </div>
+            <div class="col-sm-4">
+                <ul class="pull-right">
+                    <li><a href="{{ 'home'|page }}">Home</a></li>
+                    <li><a href="{{ 'samples/about'|page }}">About Us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="{{ 'samples/contact'|page }}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+";s:5:"mtime";i:1477206205;s:6:"markup";s:837:"<div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+				&copy;  {{ "now"|date("Y") }} {{ this.theme.site_name }}. All Rights Reserved. A <a href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates" target="_blank">ShapeBootstrap</a> Theme &#123;&#123; Powered by <a href="http://octobercms.com/">OctoberCMS</a> &#125;&#125;
+            </div>
+            <div class="col-sm-4">
+                <ul class="pull-right">
+                    <li><a href="{{ 'home'|page }}">Home</a></li>
+                    <li><a href="{{ 'samples/about'|page }}">About Us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="{{ 'samples/contact'|page }}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>";s:4:"code";N;}}
