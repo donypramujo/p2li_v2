@@ -7,12 +7,19 @@ class CreateDojoLouhanJuriesTable extends Migration
 {
     public function up()
     {
-        Schema::create('dojo_louhan_juries', function($table)
+        Schema::create('dojo_louhan_contest_jury', function($table)
         {
             $table->engine = 'InnoDB';
+            $table->increments('id');
             $table->integer('contest_id')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->primary(['contest_id', 'user_id'], 'contest_jury');
+            $table->foreign('contest_id')->references('id')->on('dojo_louhan_contests')
+            ->onUpdate('restrict')->onDelete('restrict');
+            $table->foreign('user_id')->references('id')->on('backend_users')
+            ->onUpdate('restrict')->onDelete('restrict');
+            
+            
+            $table->unique(['contest_id','user_id']);
         });
     }
     

@@ -7,10 +7,16 @@ plugin:
 navigation:
     masterdata-main-menu-item:
         label: 'dojo.louhan::lang.label.master_data'
-        url: dojo/louhan/categories
+        url: dojo/louhan/juries
         icon: icon-book
         permissions: {  }
         sideMenu:
+            jury-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_juries'
+                url: dojo/louhan/juries
+                icon: icon-users
+                permissions:
+                    - access_juries
             category-side-menu-item:
                 label: 'dojo.louhan::lang.label.manage_categories'
                 url: dojo/louhan/categories
@@ -29,10 +35,6 @@ navigation:
                 icon: icon-users
                 permissions:
                     - access_teams
-            user-side-menu-item:
-                label: 'dojo.louhan::lang.label.manage_users'
-                url: dojo/louhan/users
-                icon: icon-users
     contest-main-menu-item:
         label: 'dojo.louhan::lang.label.contest'
         url: dojo/louhan/contests
@@ -52,9 +54,9 @@ permissions:
     access_teams:
         tab: 'dojo.louhan::lang.label.master_data'
         label: 'dojo.louhan::lang.label.manage_teams'
-    access_users:
+    access_juries:
         tab: 'dojo.louhan::lang.label.master_data'
-        label: 'dojo.louhan::lang.label.manage_users'
+        label: 'dojo.louhan::lang.label.manage_juries'
     access_contests:
         tab: 'dojo.louhan::lang.label.contest'
         label: 'dojo.louhan::lang.label.manage_contests'

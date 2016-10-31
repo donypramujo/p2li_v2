@@ -27,12 +27,30 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1477824348469</id>
+			<id>1477825571017</id>
 			<name></name>
 			<type>26</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-</arguments>
+				<arguments>1.0-name-matches-false-false-storage</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1477825571029</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-vendor</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1477825571040</id>
+			<name></name>
+			<type>26</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-*uk*</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

@@ -12,31 +12,39 @@ columns:
         label: 'dojo.louhan::lang.label.overall_impression'
         select: concat(rate_overall_impression, ' %')
         sortable: true
+        type: number
     rate_head:
         label: 'dojo.louhan::lang.label.head'
         select: concat(rate_head, ' %')
         sortable: true
+        type: number
     rate_face:
         label: 'dojo.louhan::lang.label.face'
         select: concat(rate_face, ' %')
         sortable: true
+        type: number
     rate_body_shape:
         label: 'dojo.louhan::lang.label.body_shape'
         select: concat(rate_body_shape, ' %')
         sortable: true
+        type: number
     rate_marking:
         label: 'dojo.louhan::lang.label.marking'
         select: concat(rate_marking, ' %')
         sortable: true
+        type: number
     rate_pearl:
         label: 'dojo.louhan::lang.label.pearl'
         select: concat(rate_pearl, ' %')
         sortable: true
+        type: number
     rate_color:
         label: 'dojo.louhan::lang.label.color'
         select: concat(rate_color, ' %')
         sortable: true
+        type: number
     rate_finnage:
         label: 'dojo.louhan::lang.label.finnage'
         select: concat(rate_finnage, ' %')
         sortable: true
+        type: number

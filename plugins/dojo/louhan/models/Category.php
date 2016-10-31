@@ -17,7 +17,7 @@ class Category extends Model {
 	 */
 	public $rules = [ 
 			'name' => 'required|unique:dojo_louhan_categories|max:50',
-			'rate_overall_impression' => 'required|numeric|between:0,100',
+			'rate_overall_impression' => 'required|numeric|between:0,100|total_rate',
 			'rate_head' => 'required|numeric|between:0,100',
 			'rate_face' => 'required|numeric|between:0,100',
 			'rate_body_shape' => 'required|numeric|between:0,100',

@@ -1,0 +1,10 @@
+name: Juries
+form: $/dojo/louhan/models/jury/fields.yaml
+modelClass: Backend\Models\User
+defaultRedirect: dojo/louhan/juries
+create:
+    redirect: 'dojo/louhan/juries/update/:id'
+    redirectClose: dojo/louhan/juries
+update:
+    redirect: dojo/louhan/juries
+    redirectClose: dojo/louhan/juries

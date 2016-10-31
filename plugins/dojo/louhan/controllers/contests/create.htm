@@ -55,6 +55,11 @@
 	<?php Block::endPut() ?>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    <p><a href="<?= Backend::url('dojo/louhan/contests') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+	<div class="control-breadcrumb">
+        <?= Block::placeholder('breadcrumb') ?>
+    </div>
+    <div class="padded-container">
+    	<p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+    	<p><a href="<?= Backend::url('dojo/louhan/contests') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+	</div>
 <?php endif ?>

@@ -1,16 +1,19 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('dojo/louhan/users') ?>">Users</a></li>
+        <li><a href="<?= Backend::url('dojo/louhan/juries') ?>">Juries</a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
 
 <?php if (!$this->fatalError): ?>
 
-    <?= Form::open(['class' => 'layout']) ?>
+   <?php Block::put('form-contents') ?>
 
+         <div class="layout-row min-size">
+            <?= $this->formRenderOutsideFields() ?>
+        </div>
         <div class="layout-row">
-            <?= $this->formRender() ?>
+            <?= $this->formRenderPrimaryTabs() ?>
         </div>
 
         <div class="form-buttons">
@@ -33,14 +36,31 @@
                     <?= e(trans('backend::lang.form.create_and_close')) ?>
                 </button>
                 <span class="btn-text">
-                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('dojo/louhan/users') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
+                    <?= e(trans('backend::lang.form.or')) ?> <a href="<?= Backend::url('dojo/louhan/juries') ?>"><?= e(trans('backend::lang.form.cancel')) ?></a>
                 </span>
             </div>
         </div>
 
-    <?= Form::close() ?>
+    <?php Block::endPut() ?>
+	
+	<!-- Complimentary sidebar -->
+	<?php Block::put('form-sidebar') ?>
+	     <div class="hide-tabs"><?= $this->formRenderSecondaryTabs() ?></div>
+	<?php Block::endPut() ?>
+	
+	<!-- Layout execution -->
+	<?php Block::put('body') ?>
+	    <?= Form::open(['class'=>'layout stretch']) ?>
+	        <?= $this->makeLayout('form-with-sidebar') ?>
+	    <?= Form::close() ?>
+	<?php Block::endPut() ?>
 
 <?php else: ?>
-    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    <p><a href="<?= Backend::url('dojo/louhan/users') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+	<div class="control-breadcrumb">
+        <?= Block::placeholder('breadcrumb') ?>
+    </div>
+    <div class="padded-container">
+    	<p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+    	<p><a href="<?= Backend::url('dojo/louhan/juries') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
+    </div>
 <?php endif ?>

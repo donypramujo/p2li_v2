@@ -1,6 +1,6 @@
-list: ~/modules/backend/models/user/columns.yaml
+list: $/dojo/louhan/models/jury/columns.yaml
 modelClass: Backend\Models\User
-title: Users
+title: Juries
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
@@ -8,4 +8,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'dojo/louhan/users/update/:id'
+recordUrl: 'dojo/louhan/juries/update/:id'

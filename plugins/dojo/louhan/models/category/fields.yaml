@@ -22,35 +22,35 @@ secondaryTabs:
             label: 'dojo.louhan::lang.label.head'
             span: auto
             placeholder: 'dojo.louhan::lang.label.head'
-            type: text
+            type: number
         rate_face:
             label: 'dojo.louhan::lang.label.face'
             span: auto
             placeholder: 'dojo.louhan::lang.label.face'
-            type: text
+            type: number
         rate_body_shape:
             label: 'dojo.louhan::lang.label.body_shape'
             span: auto
             placeholder: 'dojo.louhan::lang.label.body_shape'
-            type: text
+            type: number
         rate_marking:
             label: 'dojo.louhan::lang.label.marking'
             span: auto
             placeholder: 'dojo.louhan::lang.label.marking'
-            type: text
+            type: number
         rate_pearl:
             label: 'dojo.louhan::lang.label.pearl'
             span: auto
             placeholder: 'dojo.louhan::lang.label.pearl'
-            type: text
+            type: number
         rate_color:
             label: 'dojo.louhan::lang.label.color'
             span: auto
             placeholder: 'dojo.louhan::lang.label.color'
-            type: text
+            type: number
         rate_finnage:
             label: 'dojo.louhan::lang.label.finnage'
             span: auto
             placeholder: 'dojo.louhan::lang.label.finnage'
-            type: text
+            type: number
 tabs: 

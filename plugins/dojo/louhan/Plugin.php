@@ -26,7 +26,8 @@ class Plugin extends PluginBase {
 	}
 	
 	public function boot() {
-		Validator::extend ( 'rate', function ($attribute, $value, $parameters, $validator) {
+		
+		Validator::extend ( 'total_rate', function ($attribute, $value, $parameters, $validator) {
 			$rates = array_only ( $validator->getData (), [ 
 					'rate_overall_impression',
 					'rate_head',
@@ -39,10 +40,7 @@ class Plugin extends PluginBase {
 			] );
 			$total_rates = collect ( $rates )->sum ();
 			return $total_rates == 100;
-		}, trans ( 'dojo.louhan::lang.validation.rate' ) );
-		
-		
-		
+		}, trans ( 'dojo.louhan::lang.label.total_rate' ) );
 		
 		User::extend(function($model) {
 			$model->belongsToMany['contests'] = ['Dojo\Louhan\Models\Contest','table' => 'dojo_louhan_juries'];

@@ -19,7 +19,6 @@ class Categories extends Controller
     public function __construct()
     {
         parent::__construct();
-
         BackendMenu::setContext('Dojo.Louhan', 'masterdata-main-menu-item', 'category-side-menu-item');
     }
 }

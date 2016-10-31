@@ -1,9 +1,7 @@
-1.0.1:
+1.0.5:
     - 'Initialize plugin.'
     - create_dojo_louhan_categories_table.php
     - create_dojo_louhan_subcategories_table.php
     - create_dojo_louhan_teams_table.php
     - create_dojo_louhan_contests_table.php
-1.0.2:
-    - 'Created table dojo_louhan_juries'
     - create_dojo_louhan_juries_table.php
