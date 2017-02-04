@@ -5,9 +5,10 @@ fields:
         placeholder: 'dojo.louhan::lang.label.contest_name'
         type: text
     juries: 
-        label: 'Crots'
+        label: 'dojo.louhan::lang.label.juries'
         span: full
         type: partial
+        commentAbove: 'dojo.louhan::lang.field.comment.juries'
         path: $/dojo/louhan/models/contest/_field_juries.htm
 secondaryTabs:
     fields:
@@ -25,8 +26,7 @@ secondaryTabs:
             format: d/m/Y
         status:
             label: 'dojo.louhan::lang.label.status'
-            span: left
-            type: radio
-            default: nomination
+            type: partial
+            path: $/dojo/louhan/models/contest/_field_status.htm
 tabs:
 

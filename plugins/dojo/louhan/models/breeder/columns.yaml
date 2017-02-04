@@ -1,0 +1,10 @@
+columns:
+    id:
+        label: 'dojo.louhan::lang.label.id'
+        type: number
+        sortable: true
+    name:
+        label: 'dojo.louhan::lang.label.breeder_name'
+        type: text
+        searchable: true
+        sortable: true

@@ -44,5 +44,33 @@
         'ongoing' => 'Ongoing',
         'completed' => 'Completed',
         'manage_juries' => 'Manage Juries',
+        'contest_settings' => 'Contest Settings',
+        'manage_contest_settings' => 'Manage contest settings.',
+        'minor_penalty' => 'Minor Penalty',
+        'major_penalty' => 'Major Penalty',
+        'max_score' => 'Maximum Score',
+        'score' => 'Score',
+        'selected_contest' => 'Selected Contest',
+        'manage_breeders' => 'Manage Breeders',
+    	'breeder_name' => 'Breeder Name',
+    	'juries' => 'Juries',
+    	'jury' => 'Jury',
+    ],
+	'field' => [
+		'comment' => [
+				'juries' => 'Jury could not be added with ongoing contest '
+		]	
+	],
+    'access' => [
+        'manage_categories' => 'Manage categories',
+        'manage_subcategories' => 'Manage subcategories',
+        'manage_users' => 'Manage users',
+        'manage_juries' => 'Manage juries',
+        'manage_contests' => 'Manage contests',
+        'manage_teams' => 'Manage teams',
+        'manage_contest_settings' => 'Manage contest settings',
+        'master_data' => 'Master Data',
+        'manage_breeders' => 'Manage breeders',
+        'contest' => 'Contest',
     ],
 ];

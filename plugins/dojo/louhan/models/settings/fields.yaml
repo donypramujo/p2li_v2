@@ -1,7 +1,27 @@
-fields:
-    name:
-        label: 'dojo.louhan::lang.label.subcategory_name'
-        span: left
-        placeholder: 'dojo.louhan::lang.label.subcategory_name'
-        type: text
-
+tabs: 
+    defaultTab: 'dojo.louhan::lang.label.contest'
+    fields: 
+        contest: 
+            label: 'dojo.louhan::lang.label.selected_contest'
+            type: dropdown
+        max_score: 
+            label: 'dojo.louhan::lang.label.max_score'
+            span: left
+            placeholder: 'dojo.louhan::lang.label.max_score'
+            type: number
+            default: 10000
+            tab: 'dojo.louhan::lang.label.score'
+        minor_penalty: 
+            label: 'dojo.louhan::lang.label.minor_penalty'
+            span: left
+            placeholder: 'dojo.louhan::lang.label.minor_penalty'
+            type: number
+            default: 5
+            tab: 'dojo.louhan::lang.label.score'
+        major_penalty: 
+            label: 'dojo.louhan::lang.label.major_penalty'
+            span: left
+            placeholder: 'dojo.louhan::lang.label.major_penalty'
+            type: number
+            default: 10
+            tab: 'dojo.louhan::lang.label.score'

@@ -26,8 +26,6 @@ class Contests extends Controller
         BackendMenu::setContext('Dojo.Louhan', 'contest-main-menu-item', 'contests-side-menu-item');
         
         
-        
-        
     }
     
 }

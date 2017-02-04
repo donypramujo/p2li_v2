@@ -326,14 +326,14 @@ class RelationController extends ControllerBehavior
         $this->relationObject = $this->model->{$field}();
         $this->relationModel = $this->relationObject->getRelated();
 
+        $this->manageId = post('manage_id');
+        $this->foreignId = post('foreign_id');
         $this->readOnly = $this->getConfig('readOnly');
         $this->deferredBinding = $this->getConfig('deferredBinding') || !$this->model->exists;
         $this->toolbarButtons = $this->evalToolbarButtons();
         $this->viewMode = $this->evalViewMode();
         $this->manageMode = $this->evalManageMode();
         $this->manageTitle = $this->evalManageTitle();
-        $this->manageId = post('manage_id');
-        $this->foreignId = post('foreign_id');
 
         /*
          * Toolbar widget
@@ -595,6 +595,8 @@ class RelationController extends ControllerBehavior
 
     protected function makeViewWidget()
     {
+        $widget = null;
+
         /*
          * Multiple (has many, belongs to many)
          */
@@ -643,7 +645,7 @@ class RelationController extends ControllerBehavior
             }
             elseif ($scopeMethod = $this->getConfig('view[scope]')) {
                 $widget->bindEvent('list.extendQueryBefore', function($query) use ($scopeMethod) {
-                    $query->$scopeMethod();
+                    $query->$scopeMethod($this->model);
                 });
             }
             else {
@@ -773,7 +775,7 @@ class RelationController extends ControllerBehavior
             }
             elseif ($scopeMethod = $this->getConfig('manage[scope]')) {
                 $widget->bindEvent('list.extendQueryBefore', function($query) use ($scopeMethod) {
-                    $query->$scopeMethod();
+                    $query->$scopeMethod($this->model);
                 });
             }
             else {
@@ -1241,10 +1243,10 @@ class RelationController extends ControllerBehavior
              * Save data to models
              */
             $foreignKeyName = $this->relationModel->getQualifiedKeyName();
-            $hyrdatedModels = $this->relationObject->whereIn($foreignKeyName, $foreignIds)->get();
+            $hydratedModels = $this->relationObject->whereIn($foreignKeyName, $foreignIds)->get();
             $saveData = $this->pivotWidget->getSaveData();
 
-            foreach ($hyrdatedModels as $hydratedModel) {
+            foreach ($hydratedModels as $hydratedModel) {
                 $modelsToSave = $this->prepareModelsToSave($hydratedModel, $saveData);
                 foreach ($modelsToSave as $modelToSave) {
                     $modelToSave->save(null, $this->pivotWidget->getSessionKey());
@@ -1433,8 +1435,11 @@ class RelationController extends ControllerBehavior
                 if ($this->readOnly) {
                     return 'backend::lang.relation.preview_name';
                 }
-                else {
+                elseif ($this->manageId) {
                     return 'backend::lang.relation.update_name';
+                }
+                else {
+                    return 'backend::lang.relation.create_name';
                 }
                 break;
         }

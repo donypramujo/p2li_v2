@@ -33,9 +33,7 @@ class Juries extends Controller
     
     public function listExtendQuery($query)
     {
-    	$query->whereHas('groups', function ($query) {
-    		$query->where('code','jury');
-    	});
+    	$query->juries();
     }
     
 }

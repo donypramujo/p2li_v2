@@ -1,12 +1,12 @@
-# ===================================
-#  Relation Behavior Config
-# ===================================
-juries:
-    label: Role
+juries: 
+    label: 'dojo.louhan::lang.label.jury'
     view:
-        list: ~/modules/backend/models/user/columns.yaml
+        list: $/dojo/louhan/models/jury/short_columns.yaml
         toolbarButtons: add|remove
+        recordOnClick: 
+        showSearch: true
     manage:
-        list: $/dojo/louhan/models/jury/columns.yaml
+        list: $/dojo/louhan/models/jury/short_columns.yaml
         form: $/dojo/louhan/models/jury/fields.yaml
-        scope: jury
+        scope: juries
+    

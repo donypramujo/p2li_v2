@@ -4,4 +4,6 @@
     - create_dojo_louhan_subcategories_table.php
     - create_dojo_louhan_teams_table.php
     - create_dojo_louhan_contests_table.php
-    - create_dojo_louhan_juries_table.php
+    - create_dojo_louhan_contest_juries_table.php
+    - create_dojo_louhan_breeders_table.php
+    - create_dojo_louhan_titles_table.php

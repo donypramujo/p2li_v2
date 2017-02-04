@@ -1,0 +1,10 @@
+name: Breeders
+form: $/dojo/louhan/models/breeder/fields.yaml
+modelClass: Dojo\Louhan\Models\Breeder
+defaultRedirect: dojo/louhan/breeders
+create:
+    redirect: 'dojo/louhan/breeders/update/:id'
+    redirectClose: dojo/louhan/breeders
+update:
+    redirect: dojo/louhan/breeders
+    redirectClose: dojo/louhan/breeders

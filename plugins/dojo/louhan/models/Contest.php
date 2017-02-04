@@ -30,7 +30,7 @@ class Contest extends Model
     public $table = 'dojo_louhan_contests';
     
     public $belongsToMany = [
-    		'juries' => ['Backend\Models\User','table' => 'dojo_louhan_juries'],
+    		'juries' => ['Backend\Models\User','table' => 'dojo_louhan_contest_juries'],
     ];
     
     
@@ -41,8 +41,8 @@ class Contest extends Model
     	}
     }
     
-    public function getStatusOptions()
-    {
-    	return ['preparation'=>'Preparation','nomination' => 'Nomination', 'ongoing' => 'Ongoing','completed'=>'Completed','cancelled'=>'Cancelled'];
-    }
+//     public function getStatusOptions()
+//     {
+//     	return ['preparation'=>'Preparation','nomination' => 'Nomination', 'ongoing' => 'Ongoing','completed'=>'Completed','cancelled'=>'Cancelled'];
+//     }
 }

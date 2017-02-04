@@ -14,13 +14,14 @@ class Plugin extends PluginBase {
 	public function registerSettings() {
 		return [ 
 				'contest' => [ 
-						'label' => 'Manage Configuration',
-						'description' => 'Manage contest configuration.',
+						'label' => 'dojo.louhan::lang.label.contest_settings',
+						'description' => 'dojo.louhan::lang.label.manage_contest_settings',
 						'category' => 'dojo.louhan::lang.label.contest',
-						'icon' => 'icon-globe',
+						'icon' => 'icon-gear',
 						'class' => 'Dojo\Louhan\Models\Settings',
 						'order' => 0,
-						'keywords' => 'contest' 
+						'keywords' => 'contest configuration',
+						'permissions' => ['dojo.louhan.access_settings']
 				] 
 		];
 	}
@@ -44,9 +45,10 @@ class Plugin extends PluginBase {
 		
 		User::extend(function($model) {
 			$model->belongsToMany['contests'] = ['Dojo\Louhan\Models\Contest','table' => 'dojo_louhan_juries'];
-
-			$model->addDynamicMethod('scopeJury', function($query) use ($model) {
-				return $query->where('id', 2);
+			$model->addDynamicMethod('scopeJuries', function($query) use ($model) {
+				return $query->whereHas('groups', function ($query) {
+    				$query->where('code','jury');
+    			});
 			});
 			
 		});

@@ -35,28 +35,43 @@ navigation:
                 icon: icon-users
                 permissions:
                     - access_teams
+            breeder-side-menu-item:
+                label: 'dojo.louhan::lang.label.manage_breeders'
+                url: dojo/louhan/breeders
+                icon: icon-user-secret
+                permissions:
+                    - access_breeders
     contest-main-menu-item:
         label: 'dojo.louhan::lang.label.contest'
         url: dojo/louhan/contests
-        icon: icon-comments
+        icon: icon-trophy
+        permissions: {  }
         sideMenu:
             contests-side-menu-item:
                 label: 'dojo.louhan::lang.label.manage_contests'
                 url: dojo/louhan/contests
-                icon: icon-comments-o
+                icon: icon-sticky-note
+                permissions:
+                    - access_contests
 permissions:
     access_categories:
-        tab: 'dojo.louhan::lang.label.master_data'
-        label: 'dojo.louhan::lang.label.manage_categories'
+        tab: 'dojo.louhan::lang.access.master_data'
+        label: 'dojo.louhan::lang.access.manage_categories'
     access_subcategories:
-        tab: 'dojo.louhan::lang.label.master_data'
-        label: 'dojo.louhan::lang.label.manage_subcategories'
+        tab: 'dojo.louhan::lang.access.master_data'
+        label: 'dojo.louhan::lang.access.manage_subcategories'
     access_teams:
-        tab: 'dojo.louhan::lang.label.master_data'
-        label: 'dojo.louhan::lang.label.manage_teams'
+        tab: 'dojo.louhan::lang.access.master_data'
+        label: 'dojo.louhan::lang.access.manage_teams'
     access_juries:
-        tab: 'dojo.louhan::lang.label.master_data'
-        label: 'dojo.louhan::lang.label.manage_juries'
+        tab: 'dojo.louhan::lang.access.master_data'
+        label: 'dojo.louhan::lang.access.manage_juries'
     access_contests:
-        tab: 'dojo.louhan::lang.label.contest'
-        label: 'dojo.louhan::lang.label.manage_contests'
+        tab: 'dojo.louhan::lang.access.contest'
+        label: 'dojo.louhan::lang.access.manage_contests'
+    access_settings:
+        tab: 'dojo.louhan::lang.access.contest'
+        label: 'dojo.louhan::lang.access.manage_contest_settings'
+    access_breeders:
+        tab: 'dojo.louhan::lang.access.master_data'
+        label: 'dojo.louhan::lang.access.manage_breeders'
